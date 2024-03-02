@@ -82,5 +82,8 @@ function genderMsg(isMale){
 }
 
 alertBox.addEventListener('dblclick',()=>{
-	alertBox.remove()
+	setInterval(()=>{
+		alertBox.remove()
+	},500)
+
 })
