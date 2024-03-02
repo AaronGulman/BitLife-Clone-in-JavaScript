@@ -121,12 +121,12 @@ helloMsg{
 }
 
 
-.actionPanel{
+.helloScreen{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 30%;
-	width: 30%;
+	height: 50%;
+	width: 20%;
 	background: #0f0c1a;
 	color: #fff;
 	padding: 2%;
