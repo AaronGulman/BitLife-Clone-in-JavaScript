@@ -1,5 +1,9 @@
 :root{
 	--mainColor:#0f0c1a;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
 body,
@@ -8,7 +12,7 @@ html{
 	margin: 0;
 	background: #2f2e2e;
 	height: 100vh;
-	font-family: Comic;
+	font-family:" Comic Sans MS";
 	user-select: none;
 }
 
@@ -125,7 +129,7 @@ helloMsg{
 .mainUI{
 	display: flex;
 	flex-direction: column;
-	height: 50%;
+	height: 60%;
 	width: 20%;
 	background: #0f0c1a;
 	color: #fff;
@@ -153,6 +157,7 @@ helloMsg{
 	height: 100%;
 	width: 100%;
 	background: rgb(255, 255, 255);
+	overflow: scroll;
 
 }
 
@@ -160,22 +165,40 @@ helloMsg{
 
 	padding: 0;
 	margin: 0;
-	height: 100%;
+	height: 60%;
 	width: 100%;
 	background: rgb(153, 202, 210);
+	
+
+}
+
+
+.ageBox{
+	position: absolute;
+	height: 10%;
+	width: 7%;
+	border-radius: 50%;
+	text-align: center;
+	user-select: none;
 
 }
 
 
 .ageBtn{
-	position: absolute;
-	height: 10%;
-	width: 7%;
+	height: 100%;
+	width: 100%;
+	font-size: 30px;
 	background: rgb(0, 128, 0);
+	border: 3px solid #fff;
 	border-radius: 50%;
+	display: flex;
 	text-align: center;
-}
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.638);
 
+}
 
 .options{
 	display: flex;
@@ -207,10 +230,117 @@ helloMsg{
 .lifeStage, .assets, .relationships, .activities{
 	height: 50%;
 	width: 30%;
-	background: rgb(255, 255, 255);
 	border-radius: 50%;
+}
+
+.assets, .relationships, .activities{
+	height: 50%;
+	width: 30%;
+	background: rgb(2, 230, 255);
+	border-radius: 50%;
+}
+
+.lifeStage{
+	background: rgb(237, 114, 6);
+}
+
+
+.statsMain{
+	display: flex;
+	flex-direction: column;
+	height: 70%;
+	width: 100%;
+	background: #fff;
+	justify-content: center;
+	align-items: center;
+}
+
+.stats{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 90%;
+	background: #fff;
+	justify-content: center;
+	gap: 2px;
+}
+
+.statBox{
+	display: flex;
+	justify-content: right;
+	align-items: center;
+
+	height: 15%;
+	width: 100%;
+}
+
+.statText{
+	display: flex;
+	justify-content: left;
+	color: #a7a4a4;
+	font-size: 20px;
+	height:30px;
+	user-select: none
+	/* box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.368); */
+}
+
+.statBar{
+	height: 50%;
+	width: 60%;
+	background: #20a419;
+}
+
+.happinessDiv{
 
 }
+
+.healthDiv{
+
+}
+
+.smartsDiv{
+
+}
+
+.looksDiv{
+
+}
+
+.happiness{
+
+}
+
+.health{
+
+}
+
+.smarts{
+
+}
+
+.looks{
+
+}
+
+.statBar{
+
+}
+
+
+.bottomLeftOne, .bottomLeftTwo, .bottomRightOne, .bottomRightTwo{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
