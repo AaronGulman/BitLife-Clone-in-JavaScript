@@ -1,7 +1,10 @@
 let mainUI = document.createElement('div')
 let ageBtn = document.createElement('div')
 
+
+
 //topUI
+let topUI = document.createElement('div')
 
 
 //midUI
@@ -9,8 +12,16 @@ let midUI = document.createElement('div')
 
 
 
-//bottomUI part:
+//bottomUI 
 let bottomUI = document.createElement('div')
+let bottomLeft = document.createElement('div')
+let bottomRight = document.createElement('div')
+
+
+let lifeStage = document.createElement('div')
+let assets = document.createElement('div')
+let relationships = document.createElement('div')
+let activities = document.createElement('div')
 let options = document.createElement('div')
 
 
@@ -52,10 +63,27 @@ function midUIfunc(){
 }
 
 function bottomUIfunc(){
-	options.classList.add('options')
-	bottomUI.classList.add('bottomUI')
+
+	bottomLeft.classList.add('bottomLeft')
+	bottomRight.classList.add('bottomRight')
+
+	lifeStage.classList.add('lifeStage')
+	assets.classList.add('assets')
+	relationships.classList.add('relationships')
+	activities.classList.add('activities')
 	
-	options.append(ageBtn)
+	options.classList.add('options')
+
+
+	
+	bottomUI.classList.add('bottomUI')
+
+
+
+	bottomLeft.append(lifeStage, assets)
+	bottomRight.append(relationships, activities)
+	
+	options.append(bottomLeft, ageBtn, bottomRight)
 	
 	bottomUI.append(options)
 
