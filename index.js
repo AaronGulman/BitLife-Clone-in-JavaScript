@@ -1,4 +1,4 @@
-import { actionPanel } from "./modules/mainUI.js"
+import { helloScreen } from "./modules/mainUI.js"
 
 let main = document.querySelector("#main")
 
@@ -53,13 +53,13 @@ main.appendChild(greetingMsg)
 male.addEventListener('click',()=>{
 	greetingMsg.remove()
 	genderMsg(true)
-	actionPanel()
+	helloScreen()
 
 })
 female.addEventListener('click',()=>{
 	greetingMsg.remove()
 	genderMsg(false)
-	actionPanel()
+	helloScreen()
 
 
 })
