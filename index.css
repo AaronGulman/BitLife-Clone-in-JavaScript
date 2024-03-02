@@ -157,10 +157,7 @@ helloMsg{
 }
 
 .bottomUI{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+
 	padding: 0;
 	margin: 0;
 	height: 100%;
@@ -171,15 +168,49 @@ helloMsg{
 
 
 .ageBtn{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 30%;
-	width: 30%;
+	position: absolute;
+	height: 10%;
+	width: 7%;
 	background: rgb(0, 128, 0);
 	border-radius: 50%;
+	text-align: center;
 }
 
+
+.options{
+	display: flex;
+	gap: 100px;
+	justify-content: space-around;
+	align-items: center;
+	width: 100%;
+	height: 30%;
+	background: rgb(0, 0, 255);
+	border-top: 2px solid #000;
+	border-bottom: 2px solid #000;
+
+}
+
+
+.bottomLeft , .bottomRight {
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	justify-items: space-evenly;
+	gap: 10px;
+	height: 100%;
+	width: 100%;
+	
+}
+
+
+
+.lifeStage, .assets, .relationships, .activities{
+	height: 50%;
+	width: 30%;
+	background: rgb(255, 255, 255);
+	border-radius: 50%;
+
+}
 
 
 
