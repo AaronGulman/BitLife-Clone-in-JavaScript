@@ -111,6 +111,7 @@ helloMsg{
 	color: #fff;
 	font-size: 50px;
 	opacity: 0;
+	animation: alertBoxDis 2s;
 }
 
 
@@ -121,19 +122,65 @@ helloMsg{
 }
 
 
-.helloScreen{
+.mainUI{
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 	height: 50%;
 	width: 20%;
 	background: #0f0c1a;
 	color: #fff;
-	padding: 2%;
 	box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.234);
 	animation: 2s mainUI;
 
 }
+
+
+
+.topUI{
+	padding: 0;
+	margin: 0;
+	height: 20%;
+	max-width: 100%;
+	background: rgb(255, 0, 0);
+	margin-top: 0;
+
+	
+}
+
+.midUI{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background: rgb(255, 255, 255);
+
+}
+
+.bottomUI{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	width: 100%;
+	background: rgb(153, 202, 210);
+
+}
+
+
+.ageBtn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 30%;
+	width: 30%;
+	background: rgb(0, 128, 0);
+	border-radius: 50%;
+}
+
+
 
 
 @keyframes mainUI{
@@ -162,3 +209,6 @@ helloMsg{
 		opacity: 0;
 	}
 }
+
+
+
