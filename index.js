@@ -54,6 +54,7 @@ male.addEventListener('click',()=>{
 	greetingMsg.remove()
 	genderMsg(true)
 	helloScreen()
+	navigator.vibrate(50)
 
 })
 female.addEventListener('click',()=>{
