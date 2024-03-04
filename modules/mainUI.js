@@ -48,6 +48,11 @@ let healthBar = document.createElement('div')
 let smartsBar = document.createElement('div')
 let looksBar = document.createElement('div')
 
+let barPercentage = document.createElement('p')
+let barPercentage1 = document.createElement('p')
+let barPercentage2 = document.createElement('p')
+let barPercentage3 = document.createElement('p')
+
 
 // ----------------------------------------------------
 
@@ -174,6 +179,8 @@ function bottomUIfunc(){
 	
 	statsMain.append(stats)
 
+	//bars
+
 	happinessDiv.append(happiness, happinessBar)
 	healthDiv.append(health, healthBar)
 	smartsDiv.append(smarts, smartsBar)
@@ -181,7 +188,24 @@ function bottomUIfunc(){
 
 	bottomUI.append(options,statsMain)
 
+
+	barPercentage.textContent = "100%"
+	barPercentage1.textContent = "100%"
+	barPercentage2.textContent = "100%"
+	barPercentage3.textContent = "100%"
+
+	barPercentage.classList.add('barPercentage')
+	barPercentage1.classList.add('barPercentage')
+	barPercentage2.classList.add('barPercentage')
+	barPercentage3.classList.add('barPercentage')
+
+
+	happinessBar.appendChild(barPercentage)
+	healthBar.appendChild(barPercentage1)
+	smartsBar.appendChild(barPercentage2)
+	looksBar.appendChild(barPercentage3)
 	
+
 
 }
 
