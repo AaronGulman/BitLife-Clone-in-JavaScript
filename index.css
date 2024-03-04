@@ -162,10 +162,11 @@ helloMsg{
 }
 
 .bottomUI{
-
+	display: flex;
+	flex-direction: column;
 	padding: 0;
 	margin: 0;
-	height: 60%;
+	height: 35%;
 	width: 100%;
 	background: rgb(153, 202, 210);
 	
@@ -174,20 +175,22 @@ helloMsg{
 
 
 .ageBox{
-	position: absolute;
-	height: 9%;
-	width: 6%;
-	border-radius: 50%;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
 	text-align: center;
 	user-select: none;
-	
+	background: #3564a2;
 
 }
 
 
 .ageBtn{
-	height: 100%;
-	width: 90%;
+	position: absolute;
+	height: 9%;
+	width: 5%;
 	font-size: 30px;
 	background: rgb(0, 128, 0);
 	border: 3px solid #fff;
@@ -203,11 +206,10 @@ helloMsg{
 
 .options{
 	display: flex;
-	gap: 100px;
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	height: 30%;
+	height: 35%;
 	border-top: 2px solid #000;
 	border-bottom: 2px solid #000;
 
@@ -226,6 +228,11 @@ helloMsg{
 	border-right: 1px solid #000;
 }
 
+.bottomRightOne{
+	border-left: 1px solid #000;
+
+}
+
 
 .bottomLeft , .bottomRight {
 	display: flex;
@@ -234,6 +241,7 @@ helloMsg{
 	justify-items: space-evenly;
 	height: 100%;
 	width: 100%;
+
 	
 }
 
