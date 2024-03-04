@@ -129,7 +129,7 @@ helloMsg{
 .mainUI{
 	display: flex;
 	flex-direction: column;
-	height: 60%;
+	height: 70%;
 	width: 20%;
 	background: #0f0c1a;
 	color: #fff;
@@ -230,7 +230,6 @@ helloMsg{
 
 .bottomRightOne{
 	border-left: 1px solid #000;
-
 }
 
 
@@ -306,6 +305,9 @@ helloMsg{
 }
 
 .statBar{
+	display:flex;
+	justify-content:right;
+	align-items: center;
 	height: 50%;
 	width: 60%;
 	background: #20a419;
@@ -347,7 +349,15 @@ helloMsg{
 
 }
 
+.barPercentage{
+	display:flex;
+	justify-content:right;
+	color: #fff;
+	font-size: 10px;
+	margin-right: 5px;
 
+
+}
 
 
 
