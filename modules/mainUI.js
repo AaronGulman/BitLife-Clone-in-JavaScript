@@ -1,3 +1,6 @@
+import {toMenu} from './menu.js';
+
+
 let mainUI = document.createElement('div')
 let ageBox = document.createElement('div')
 let ageBtn = document.createElement('div')
@@ -6,7 +9,15 @@ let ageBtn = document.createElement('div')
 
 //topUI
 let topUI = document.createElement('div')
+let menuIcon = document.createElement('div')
 
+menuIcon.classList.add('menuIcon')
+
+
+topUI.append(menuIcon)
+
+
+menuIcon.addEventListener('click',toMenu)
 
 //midUI
 let midUI = document.createElement('div')
@@ -99,6 +110,8 @@ function userInterface(){
 
 function topUIfunc(){
 	topUI.classList.add('topUI')
+
+
 }
 
 
@@ -205,7 +218,6 @@ function bottomUIfunc(){
 	smartsBar.appendChild(barPercentage2)
 	looksBar.appendChild(barPercentage3)
 	
-
 
 }
 
