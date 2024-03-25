@@ -1,7 +1,8 @@
 import {toMenu} from './menu.js';
 
 
-let mainUI = document.createElement('div')
+let mainFrame = document.createElement("div")
+export let mainUI = document.createElement('div')
 let ageBox = document.createElement('div')
 let ageBtn = document.createElement('div')
 
@@ -12,12 +13,16 @@ let topUI = document.createElement('div')
 let menuIcon = document.createElement('div')
 
 menuIcon.classList.add('menuIcon')
+menuIcon.addEventListener('click',()=>{
+	// mainUI.style.display = 'none';
+	toMenu();
+
+})
 
 
 topUI.append(menuIcon)
 
 
-menuIcon.addEventListener('click',toMenu)
 
 //midUI
 let midUI = document.createElement('div')
@@ -76,9 +81,7 @@ let options = document.createElement('div')
 
 
 export function helloScreen(){
-let main = document.querySelector('#main')
-mainUI.classList.add('mainUI')
-main.appendChild(mainUI)
+
 
 
 //functions
@@ -87,12 +90,20 @@ midUIfunc()
 bottomUIfunc()
 userInterface()
 
-
+let main = document.querySelector('#main')
+mainUI.classList.add('mainUI')
+main.appendChild(mainUI)
+mainFrame.classList.add('mainFrame')
+mainFrame.appendChild('mainUI')
+main.appendChild(mainFrame)
 }
+
+function ageBoxClickHandler() {
+	console.log('You\'re 1 year older');
+    }
 
 
 function userInterface(){
-
 	ageBtn.classList.add('ageBtn')
 	ageBtn.textContent = `+\n Age`
 
@@ -102,11 +113,12 @@ function userInterface(){
 
 	mainUI.append(topUI,midUI,bottomUI)
 
-	ageBox.addEventListener('click',()=>{
-		console.log('You\'re 1 year older')
-	})
+	ageBox.removeEventListener('click',ageBoxClickHandler)
+	ageBox.addEventListener('click',ageBoxClickHandler)
 	
 }
+
+
 
 function topUIfunc(){
 	topUI.classList.add('topUI')
@@ -219,9 +231,4 @@ function bottomUIfunc(){
 	looksBar.appendChild(barPercentage3)
 	
 
-}
-
-function ageUp(age){
-	age++;
-	
 }
