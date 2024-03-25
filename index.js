@@ -50,6 +50,7 @@ main.appendChild(greetingMsg)
 
 
 
+
 male.addEventListener('click',()=>{
 	greetingMsg.remove()
 	genderMsg(true)
