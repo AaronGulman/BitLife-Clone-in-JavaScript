@@ -159,6 +159,17 @@ helloMsg{
 	background: #fff;
 }
 
+.menuUI{
+	display: flex;
+	flex-direction: column;
+	height: 70%;
+	width: 20%;
+	background: #0f0c1a;
+	color: #fff;
+	box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.234);
+	animation: 2s mainUI;
+}
+
 .midUI{
 	padding: 0;
 	margin: 0;
