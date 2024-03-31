@@ -199,6 +199,9 @@ helloMsg{
 	overflow: scroll;
 
 }
+.midUI::-webkit-scrollbar {
+	display: none; 
+      }
 
 .bottomUI{
 	display: flex;
