@@ -1,5 +1,7 @@
+import { toactivities } from './acitivities.js';
 import {toMenu} from './menu.js';
 
+// make all stats show integers converted to Strings so when ints change their value it dinamically reflects on the text displayed in each bar
 
 let mainFrame = document.createElement("div")
 export let mainUI = document.createElement('div')
@@ -159,6 +161,12 @@ function bottomUIfunc(){
 
 
 	bottomUI.classList.add('bottomUI')
+
+	activities.addEventListener('click',()=>{
+	// mainUI.style.display = 'none';
+	toactivities();
+
+})
 
 
 
