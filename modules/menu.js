@@ -5,6 +5,7 @@ let main = document.querySelector('#main')
 
 
 export function toMenu(){
+	const menuItems = ['1','2','3','4','5','6','7']
 	let menu = document.createElement('div')
 	menu.classList.add('menuUI')
 	mainUI.append(menu)
@@ -23,7 +24,12 @@ export function toMenu(){
 			menu.remove();
 		},2000)
 	})
-	
+	menuItems.forEach(item=>{
+		let menuList = document.createElement('li')
+		menuList.textContent = item;
+	})
+	menu.append(menuItems)
+
 
 
 }
