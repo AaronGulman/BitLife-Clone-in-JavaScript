@@ -1,6 +1,7 @@
 import { toactivities } from './acitivities.js';
 import { toassets } from './assets.js';
 import {toMenu} from './menu.js';
+import { torelationships } from './relationships.js';
 
 // make all stats show integers converted to Strings so when ints change their value it dinamically reflects on the text displayed in each bar
 
@@ -164,15 +165,16 @@ function bottomUIfunc(){
 	bottomUI.classList.add('bottomUI')
 
 	activities.addEventListener('click',()=>{
-	// mainUI.style.display = 'none';
 	toactivities();
 	})
-	
-	assets.addEventListener('click',()=>{
-		// mainUI.style.display = 'none';
-		toassets();
 
-})
+	assets.addEventListener('click',()=>{
+		toassets();
+	})
+
+	relationships.addEventListener('click',()=>{
+			torelationships();
+	})
 
 
 
