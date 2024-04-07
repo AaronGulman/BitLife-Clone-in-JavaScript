@@ -18,10 +18,10 @@ export function toassets(){
 
 	backBtn.addEventListener('click',()=>{
 		
-		assets.style.animation = "2s menuDis"
+		assets.style.animation = "1.5s menuDis"
 		setTimeout(()=>{
 			assets.remove();
-		},2000)
+		},1500)
 	})
 	
 

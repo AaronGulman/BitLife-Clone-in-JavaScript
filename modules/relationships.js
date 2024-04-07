@@ -18,10 +18,10 @@ export function torelationships(){
 
 	backBtn.addEventListener('click',()=>{
 		
-		relationships.style.animation = "2s menuDis"
+		relationships.style.animation = "1.5s menuDis"
 		setTimeout(()=>{
 			relationships.remove();
-		},2000)
+		},1500)
 	})
 	
 

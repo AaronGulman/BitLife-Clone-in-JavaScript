@@ -18,10 +18,10 @@ export function toactivities(){
 
 	backBtn.addEventListener('click',()=>{
 		
-		activities.style.animation = "2s menuDis"
+		activities.style.animation = "1.5s menuDis"
 		setTimeout(()=>{
 			activities.remove();
-		},2000)
+		},1500)
 	})
 	
 
