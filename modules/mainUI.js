@@ -2,6 +2,9 @@ import { toactivities } from './acitivities.js';
 import { toassets } from './assets.js';
 import {toMenu} from './menu.js';
 import { torelationships } from './relationships.js';
+import {startNewLife} from '../index.js';
+
+
 
 // make all stats show integers converted to Strings so when ints change their value it dinamically reflects on the text displayed in each bar
 
@@ -9,7 +12,7 @@ let mainFrame = document.createElement("div")
 export let mainUI = document.createElement('div')
 let ageBox = document.createElement('div')
 let ageBtn = document.createElement('div')
-
+let age = 0;
 
 
 //topUI
@@ -20,7 +23,6 @@ menuIcon.classList.add('menuIcon')
 menuIcon.addEventListener('click',()=>{
 	// mainUI.style.display = 'none';
 	toMenu();
-
 })
 
 
@@ -30,6 +32,9 @@ topUI.append(menuIcon)
 
 //midUI
 let midUI = document.createElement('div')
+let events = document.createElement('div')
+let eventName = document.createElement('h1')
+let eventInfo = document.createElement('p')
 
 
 
@@ -94,22 +99,11 @@ midUIfunc()
 bottomUIfunc()
 userInterface()
 
-let main = document.querySelector('#main')
-mainUI.classList.add('mainUI')
-main.appendChild(mainUI)
-mainFrame.classList.add('mainFrame')
-mainFrame.appendChild('mainUI')
-main.appendChild(mainFrame)
-}
-
-function ageBoxClickHandler() {
-	console.log('You\'re 1 year older');
-    }
-
-
 function userInterface(){
 	ageBtn.classList.add('ageBtn')
+	
 	ageBtn.textContent = `+\n Age`
+	
 
 	ageBox.classList.add('ageBox')
 	ageBox.appendChild(ageBtn)
@@ -122,6 +116,49 @@ function userInterface(){
 	
 }
 
+let main = document.querySelector('#main')
+mainUI.classList.add('mainUI')
+main.appendChild(mainUI)
+mainFrame.classList.add('mainFrame')
+mainFrame.appendChild('mainUI')
+main.appendChild(mainFrame)
+}
+
+function ageBoxClickHandler() {
+    age++;
+    eventName.textContent = `Age: ${age}`; 
+    console.log('You\'re 1 year older');
+    console.log(`You\'re ${age} years old now`);
+
+    switch(age){
+	case 5:
+		alert('You are now in elementary school')
+		break;
+	case 16:
+		alert('You are now in high school')
+		break;
+	case 19:
+		alert('Graduation!')
+		let prmt = prompt('Are you going to enrol in college or search for a job?')
+		if(prmt == 'college'){
+			alert('You\'re now in college!')
+		}else{
+			let profession = prompt('Choose your profession')
+			alert(`You are now a ${profession}`)
+			
+		}
+		break;
+    }
+
+    if(age == 19){
+
+	
+    }
+
+    }
+
+
+
 
 
 function topUIfunc(){
@@ -131,8 +168,62 @@ function topUIfunc(){
 }
 
 
+
 function midUIfunc(){
+	
 	midUI.classList.add('midUI')
+	events.classList.add('events')
+	eventName.classList.add('eventName')
+	eventInfo.classList.add('eventInfo')
+
+
+	eventName.textContent = `Age: ${age}`
+	eventInfo.textContent = `${startNewLife.name} was born today. His parents are celebrating!Our policy on modern JavaScript
+
+	JavaScript is an actively evolving language and has changed greatly over the years. In particular, the 6th edition of the language (sometimes known as ECMAScript 2015 or ES6), introduced in 2015, added many new features. At the same time, to maintain backwards compatibility with older websites, old features of the language have been retained, even when they are no longer considered good practice.
+	
+	We think that the features added to JavaScript in ECMAScript 2015 and subsequent versions enable developers to write more readable, reliable, and expressive code, and that it's important to learn about them.
+	
+	The features we teach in this course are stable and have been supported by all major browsers for several years.Our policy on modern JavaScript
+
+	JavaScript is an actively evolving language and has changed greatly over the years. In particular, the 6th edition of the language (sometimes known as ECMAScript 2015 or ES6), introduced in 2015, added many new features. At the same time, to maintain backwards compatibility with older websites, old features of the language have been retained, even when they are no longer considered good practice.
+	
+	We think that the features added to JavaScript in ECMAScript 2015 and subsequent versions enable developers to write more readable, reliable, and expressive code, and that it's important to learn about them.
+	
+	The features we teach in this course are stable and have been supported by all major browsers for several years.Our policy on modern JavaScript
+
+	JavaScript is an actively evolving language and has changed greatly over the years. In particular, the 6th edition of the language (sometimes known as ECMAScript 2015 or ES6), introduced in 2015, added many new features. At the same time, to maintain backwards compatibility with older websites, old features of the language have been retained, even when they are no longer considered good practice.
+	
+	We think that the features added to JavaScript in ECMAScript 2015 and subsequent versions enable developers to write more readable, reliable, and expressive code, and that it's important to learn about them.
+	
+	The features we teach in this course are stable and have been supported by all major browsers for several years.Our policy on modern JavaScript
+
+	JavaScript is an actively evolving language and has changed greatly over the years. In particular, the 6th edition of the language (sometimes known as ECMAScript 2015 or ES6), introduced in 2015, added many new features. At the same time, to maintain backwards compatibility with older websites, old features of the language have been retained, even when they are no longer considered good practice.
+	
+	We think that the features added to JavaScript in ECMAScript 2015 and subsequent versions enable developers to write more readable, reliable, and expressive code, and that it's important to learn about them.
+	
+	The features we teach in this course are stable and have been supported by all major browsers for several years.Our policy on modern JavaScript
+
+	JavaScript is an actively evolving language and has changed greatly over the years. In particular, the 6th edition of the language (sometimes known as ECMAScript 2015 or ES6), introduced in 2015, added many new features. At the same time, to maintain backwards compatibility with older websites, old features of the language have been retained, even when they are no longer considered good practice.
+	
+	We think that the features added to JavaScript in ECMAScript 2015 and subsequent versions enable developers to write more readable, reliable, and expressive code, and that it's important to learn about them.
+	
+	The features we teach in this course are stable and have been supported by all major browsers for several years.Our policy on modern JavaScript
+
+	JavaScript is an actively evolving language and has changed greatly over the years. In particular, the 6th edition of the language (sometimes known as ECMAScript 2015 or ES6), introduced in 2015, added many new features. At the same time, to maintain backwards compatibility with older websites, old features of the language have been retained, even when they are no longer considered good practice.
+	
+	We think that the features added to JavaScript in ECMAScript 2015 and subsequent versions enable developers to write more readable, reliable, and expressive code, and that it's important to learn about them.
+	
+	The features we teach in this course are stable and have been supported by all major browsers for several years.Our policy on modern JavaScript
+
+	JavaScript is an actively evolving language and has changed greatly over the years. In particular, the 6th edition of the language (sometimes known as ECMAScript 2015 or ES6), introduced in 2015, added many new features. At the same time, to maintain backwards compatibility with older websites, old features of the language have been retained, even when they are no longer considered good practice.
+	
+	We think that the features added to JavaScript in ECMAScript 2015 and subsequent versions enable developers to write more readable, reliable, and expressive code, and that it's important to learn about them.
+	
+	The features we teach in this course are stable and have been supported by all major browsers for several years.`
+
+	events.append(eventName, eventInfo)
+	midUI.append(events)
 
 }
 
