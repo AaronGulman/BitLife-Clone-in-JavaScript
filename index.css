@@ -29,8 +29,8 @@ main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 30%;
-	width: 30%;
+	height: 300px;
+	width: 400px;
 	background: var(--mainColor);
 	animation: fadeIn 1s ;
 	color: #fff;
@@ -141,8 +141,8 @@ helloMsg{
 	position: absolute;
 	display: flex;
 	flex-direction: column;
-	height: 70%;
-	width: 20%;
+	height: 900px;
+	width: 500px;
 	background: var(--mainColor);
 	color: #fff;
 	box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.234);
@@ -182,7 +182,7 @@ helloMsg{
 	position: absolute;
 	display: flex;
 	flex-direction: column;
-	height: 1000%;
+	height: 100%;
 	width: 100%;
 	background: var(--mainColor);
 	color: #fff;
@@ -191,12 +191,34 @@ helloMsg{
 }
 
 .menuList{
+	font-size: 10px;
+	height: 20px;
+	justify-content: center;
+	border-bottom: 0.2px solid #fff;
 	display: flex;
 	flex-direction: column;
 	padding:20px;
-	gap: 10px;
-	margin-top: 20px;
+	color: #fdfdfd;
+}
 
+.menuList h1{
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 1px;
+}
+
+.menuList p{
+	font-weight: normal;
+	font-size: 15px;
+	margin-top: 0;
+}
+
+.menuList:hover{
+	background: #000;
+}
+
+.section{
+	border: 1px solid #fff;
 }
 
 .midUI{
@@ -208,6 +230,26 @@ helloMsg{
 	overflow: scroll;
 
 }
+
+.events{
+	display: flex;
+	flex-direction: column;
+	height: 200px;
+	width: 400px;
+	margin: 5px 7px;
+}
+
+.eventName,.eventInfo{
+	margin: 0;
+
+	font-size: 1em;
+	color: rgb(124, 124, 124);
+}
+
+.eventInfo{
+}
+
+
 .midUI::-webkit-scrollbar {
 	display: none; 
       }
