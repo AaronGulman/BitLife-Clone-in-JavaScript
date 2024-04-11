@@ -1,11 +1,19 @@
-import { mainUI, helloScreen } from "./mainUI.js"
+import { mainUI } from "./mainUI.js"
 
 
 let main = document.querySelector('#main')
 
 
 export function toMenu(){
-	const menuItems = ['New Life','New Life as Cat','New Life as Dog','Save Life','Lives in Progress']
+	const menuItems = [
+	{name: 'New Life',description: "Save this life and start a new one"},
+	{name:'New Life as Cat',description: "Save this life and start a new one"},
+	{name:'New Life as Dog',description: "Save this life and start a new one"},
+	{name:'Save Life',description: "Save this life and start a new one"},
+	{name:'Lives in Progress',description: "Save this life and start a new one"}
+]
+
+
 	let menu = document.createElement('div')
 	let mainMenu = document.createElement('div')
 	let menuUpper = document.createElement('div')
@@ -29,15 +37,23 @@ export function toMenu(){
 			menu.remove();
 		},1500)
 	})
+
+
+
+
 	menuItems.forEach(item=>{
 		let menuList = document.createElement('div')
-		menuList.textContent = item;
+		let menuListNames = document.createElement('h1')
+		let menuListDescriptions = document.createElement('p')
+		menuListNames.textContent = item.name;
+		menuListDescriptions.textContent = item.description;
 		menuList.classList.add('menuList')
+		menuList.append(menuListNames,menuListDescriptions)
 		menu.append(menuList)
-
 	})
-
+	
 
 
 }
+
 
