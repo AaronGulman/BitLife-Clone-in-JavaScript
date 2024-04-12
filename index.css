@@ -178,6 +178,7 @@ helloMsg{
 	background: #fff;
 }
 
+
 .menuUI{
 	position: absolute;
 	display: flex;
@@ -220,6 +221,20 @@ helloMsg{
 .section{
 	border: 1px solid #fff;
 }
+
+
+.charInfo{
+	display: flex;
+	height: 50px;
+	background:#c3c3c3;
+}
+
+.charInfoBox{
+	height: 100%;
+	width: 50%;
+	border: 1px solid #000;
+}
+
 
 .midUI{
 	padding: 0;
