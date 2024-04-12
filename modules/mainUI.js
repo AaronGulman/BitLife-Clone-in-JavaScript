@@ -17,6 +17,9 @@ let age = 0;
 
 //topUI
 let topUI = document.createElement('div')
+let charInfo = document.createElement('div')
+let charInfoL = document.createElement('div')
+let charInfoR = document.createElement('div')
 let menuIcon = document.createElement('div')
 
 menuIcon.classList.add('menuIcon')
@@ -25,8 +28,8 @@ menuIcon.addEventListener('click',()=>{
 	toMenu();
 })
 
-
-topUI.append(menuIcon)
+charInfo.append(charInfoL,charInfoR)
+topUI.append(menuIcon,charInfo)
 
 
 
@@ -163,7 +166,9 @@ function ageBoxClickHandler() {
 
 function topUIfunc(){
 	topUI.classList.add('topUI')
-
+	charInfo.classList.add('charInfo')
+	charInfoL.classList.add('charInfoBox')
+	charInfoR.classList.add('charInfoBox')
 
 }
 
