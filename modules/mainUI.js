@@ -1,8 +1,9 @@
 import { toactivities } from './acitivities.js';
 import { toassets } from './assets.js';
-import {toMenu} from './menu.js';
+import { toMenu } from './menu.js';
 import { torelationships } from './relationships.js';
-import {startNewLife} from '../index.js';
+import { startNewLife } from '../index.js';
+import { newLife } from '../modules/person.js'
 
 
 
@@ -19,8 +20,16 @@ let age = 0;
 let topUI = document.createElement('div')
 let charInfo = document.createElement('div')
 let charInfoL = document.createElement('div')
+	let face = document.createElement('div')
+	let briefInfoBox = document.createElement('div')
+		let briefInfo = document.createElement('div')
+			
+		let occupation = document.createElement('div')
 let charInfoR = document.createElement('div')
 let menuIcon = document.createElement('div')
+
+
+
 
 menuIcon.classList.add('menuIcon')
 menuIcon.addEventListener('click',()=>{
@@ -28,6 +37,8 @@ menuIcon.addEventListener('click',()=>{
 	toMenu();
 })
 
+briefInfoBox.append(briefInfo,occupation)
+charInfoL.append(face,briefInfoBox)
 charInfo.append(charInfoL,charInfoR)
 topUI.append(menuIcon,charInfo)
 
