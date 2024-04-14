@@ -1,9 +1,11 @@
 import { newLife } from './person.js';
 import { Countries } from './countries.js';
+import {greetingMsg} from '../index.js'
 
 export function countryWindow() {
     let character1 = new newLife("Aaron", 0, 0, 0);
     let window = document.createElement('div');
+    
 
     window.classList.add('countryPage');
 
@@ -18,4 +20,11 @@ export function countryWindow() {
         console.log("Country Name:", country.name);
         console.log("Country Flag:", country.flag);
     });
+
+    allCountries.map((country)=>{
+      let list =  document.createElement('li')
+      list.textContent = `${country.flag}${country.name} `
+      window.append(list)
+    })
+    return window;
 }
