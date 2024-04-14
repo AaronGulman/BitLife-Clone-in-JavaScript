@@ -16,15 +16,31 @@ export function countryWindow() {
     const countriesInstance = new Countries();
     const allCountries = countriesInstance.getAllCountries();
 
-    allCountries.forEach(country => {
-        console.log("Country Name:", country.name);
-        console.log("Country Flag:", country.flag);
+    allCountries.forEach((country ,index) => {
+        let list =  document.createElement('li')
+        list.textContent = `${country.flag}${country.name} `
+        switch(index % 5){
+            case 0:
+                list.style.background = "green";
+                break;
+            case 1:
+                list.style.background = "yellow";
+                list.style.color = "#000";
+                break;
+            case 2:
+                list.style.background = "orange";
+                break;
+            case 3:
+                list.style.background = "red";
+                break;
+            case 4:
+                list.style.background = "purple";
+                break;
+            default:
+                break;
+        }
+        window.append(list)
     });
 
-    allCountries.map((country)=>{
-      let list =  document.createElement('li')
-      list.textContent = `${country.flag}${country.name} `
-      window.append(list)
-    })
     return window;
 }

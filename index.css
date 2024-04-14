@@ -29,14 +29,60 @@ main{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 300px;
-	width: 400px;
+	height: 900px;
+	width: 500px;
 	background: var(--mainColor);
 	animation: fadeIn 1s ;
 	color: #fff;
 	padding: 2%;
 	box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.234);
 }
+
+.country{
+	height: 50px;
+	width: 350px;
+	margin-top: 30px;
+}
+
+.countryName{
+
+
+
+}
+
+.countryPage{
+	background: rgb(0, 0, 0);
+	position: absolute;
+	height: 900px;
+	width: 500px;
+	z-index: 10;
+	color:#fff;
+	z-index: 10;
+	font-size: 25px;
+	text-align: center;
+	list-style: none;
+	overflow: scroll;
+	display: flex;
+	flex-direction: column;
+
+}
+
+
+
+.countryPage li{
+	border: 1px solid #fff;
+	border-radius: 5px;
+	margin-top: 25px;
+
+}
+
+
+.countryList{
+
+
+
+}
+
 
 helloMsg{
 	font-size: 150px;
@@ -106,8 +152,8 @@ helloMsg{
 
 .alertBox{
 	background: var(--mainColor);
-	height: 30%;
-	width: 40%;
+	height: 900px;
+	width: 500px;
 	position: absolute;
 	place-content: center;
 	display: flex;
@@ -220,6 +266,10 @@ helloMsg{
 
 .section{
 	border: 1px solid #fff;
+}
+
+.briefInfoBox{
+
 }
 
 
