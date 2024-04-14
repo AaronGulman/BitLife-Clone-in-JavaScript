@@ -1,9 +1,11 @@
 import { helloScreen } from "./modules/mainUI.js"
 import {newLife} from "./modules/person.js"
+import {countryWindow} from './modules/countryWindow.js'
 
+const window = countryWindow();
 let playersExist = false;
 let main = document.querySelector("#main")
-let greetingMsg = document.createElement('div')
+export let greetingMsg = document.createElement('div')
 let helloMsg = document.createElement('h1')
 let playerName = document.createElement('input')
 let genderBox = document.createElement('div')
@@ -13,6 +15,7 @@ let alertBox = document.createElement('div')
 let alertBoxMsg = document.createElement('p')
 let maleImg = document.createElement('img')
 let femaleImg = document.createElement('img')
+
 export let startNewLife;
 
 
@@ -30,17 +33,12 @@ female.classList.add('female')
 alertBox.classList.add('alertBox')
 alertBoxMsg.classList.add('alertBoxMsg')
 
-
 helloMsg.textContent = 'Welcome to BitLife Clone'
 
 playerName.setAttribute('placeholder' , "Type your name here")
 
 
-
-
-
-
-greetingMsg.append(helloMsg,playerName,genderBox)
+greetingMsg.append(helloMsg, playerName, genderBox,window)
 
 male.appendChild(maleImg)
 female.appendChild(femaleImg)
