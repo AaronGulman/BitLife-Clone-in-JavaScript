@@ -2,7 +2,6 @@ import { helloScreen } from "./modules/mainUI.js"
 import {newLife} from "./modules/person.js"
 import {countryWindow} from './modules/countryWindow.js'
 
-const window = countryWindow();
 let playersExist = false;
 let main = document.querySelector("#main")
 export let greetingMsg = document.createElement('div')
@@ -15,6 +14,30 @@ let alertBox = document.createElement('div')
 let alertBoxMsg = document.createElement('p')
 let maleImg = document.createElement('img')
 let femaleImg = document.createElement('img')
+let countryList = document.createElement('div')
+
+countryList.textContent = "Choose Your Country"
+
+countryList.addEventListener('click',()=>{
+let window = countryWindow();
+greetingMsg.append(window)
+	
+window.addEventListener('click', (event) => {
+        console.log("Clicked inside country window:", event.target);
+        const clickedElement = event.target;
+	if (clickedElement.nodeName == 'LI') {
+		const selectedCountry = clickedElement.textContent.trim();
+		console.log("Selected country:", selectedCountry);
+		countryList.textContent = selectedCountry;
+		window.remove();
+	    }
+	    
+	})
+
+
+})
+
+
 
 export let startNewLife;
 
@@ -32,13 +55,14 @@ male.classList.add('male')
 female.classList.add('female')
 alertBox.classList.add('alertBox')
 alertBoxMsg.classList.add('alertBoxMsg')
+countryList.classList.add('countryList')
 
 helloMsg.textContent = 'Welcome to BitLife Clone'
 
 playerName.setAttribute('placeholder' , "Type your name here")
 
 
-greetingMsg.append(helloMsg, playerName, genderBox,window)
+greetingMsg.append(helloMsg, playerName,countryList, genderBox)
 
 male.appendChild(maleImg)
 female.appendChild(femaleImg)
