@@ -33,12 +33,3 @@ export class Countries {
 	}
 
 }
-
-const countriesInstance = new Countries();
-const allCountries = countriesInstance.getAllCountries();
-
-//the code below is just for a test
-allCountries.forEach(country => {
-    console.log("Country Name:", country.name);
-    console.log("Country Flag:", country.flag);
-});
