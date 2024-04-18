@@ -1,5 +1,5 @@
-:root{
-	--mainColor:#0f0c1a;
+:root {
+	--mainColor: #0f0c1a;
 	--btnColor: #4c30b2;
 	user-select: none;
 	-webkit-user-select: none;
@@ -8,63 +8,61 @@
 }
 
 body,
-html{
+html {
 	padding: 0;
 	margin: 0;
 	background: #2f2e2e;
 	height: 100vh;
-	font-family:" Comic Sans MS";
+	font-family: " Comic Sans MS";
 	user-select: none;
 }
 
-
-main{
+main {
 	display: flex;
 	height: 100vh;
 	justify-content: center;
 	align-items: center;
 }
 
-.greetingMsg{
+.greetingMsg {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	height: 900px;
 	width: 500px;
 	background: var(--mainColor);
-	animation: fadeIn 1s ;
+	animation: fadeIn 1s;
 	color: #fff;
 	padding: 2%;
 	box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.234);
 }
 
-.country{
+.country {
 	height: 50px;
 	width: 350px;
 	margin-top: 30px;
 }
 
-.countryList{
-display: flex;
-border: 3px solid;
-height: 50px;
-width: 300px;
-color: #fff;
-text-align: center;
-justify-content: center;
-align-items: center;
-margin-top: 25px;
-font-size: 30px;
-
+.countryList {
+	display: flex;
+	border: 3px solid;
+	height: 50px;
+	width: 300px;
+	color: #fff;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
+	font-size: 30px;
 }
 
-.countryPage{
+.countryPage {
 	background: rgb(0, 0, 0);
 	position: absolute;
 	height: 900px;
 	width: 500px;
 	z-index: 10;
-	color:#fff;
+	color: #fff;
 	z-index: 10;
 	font-size: 25px;
 	text-align: center;
@@ -72,40 +70,31 @@ font-size: 30px;
 	overflow: scroll;
 	display: flex;
 	flex-direction: column;
-
 }
 
-
-
-.countryPage li{
+.countryPage li {
 	border: 1px solid #fff;
 	border-radius: 5px;
 	margin-top: 25px;
-
 }
 
-
-.countryList{
-
-
-
+.countryList {
 }
 
-
-helloMsg{
+helloMsg {
 	font-size: 150px;
 }
 
-@keyframes fadeIn{
-	0%{
+@keyframes fadeIn {
+	0% {
 		opacity: 0;
 	}
-	100%{
+	100% {
 		opacity: 100%;
 	}
 }
 
-.playerName{
+.playerName {
 	outline: none;
 	background: #646363;
 	color: black;
@@ -113,15 +102,14 @@ helloMsg{
 	font-size: 25px;
 	font-weight: bold;
 	text-align: center;
-
 }
 
-.playerName::placeholder{
+.playerName::placeholder {
 	color: rgb(255, 255, 255);
 }
 
-.genderBox{
-	background: #171227 ;
+.genderBox {
+	background: #171227;
 	height: 20%;
 	margin-top: 10%;
 	width: 40%;
@@ -129,7 +117,8 @@ helloMsg{
 	flex-direction: row;
 }
 
-.male , .female{
+.male,
+.female {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -137,28 +126,27 @@ helloMsg{
 	text-align: center;
 }
 
-.male{
+.male {
 	background: #3c13d0;
-	height:100%;
+	height: 100%;
 	width: 50%;
 }
 
-.female{
+.female {
 	background: #9413d0;
-	height:100%;
+	height: 100%;
 	width: 50%;
 }
 
-.male:hover{
+.male:hover {
 	background: #4817fa;
 }
 
-
-.female:hover{
+.female:hover {
 	background: #b317fb;
 }
 
-.alertBox{
+.alertBox {
 	background: var(--mainColor);
 	height: 900px;
 	width: 500px;
@@ -173,14 +161,12 @@ helloMsg{
 	animation: alertBoxDis 2s;
 }
 
-
-
-.icon{
+.icon {
 	height: 50px;
 	width: 50px;
 }
 
-.mainFrame{
+.mainFrame {
 	display: flex;
 	flex-direction: column;
 	height: 70%;
@@ -191,7 +177,7 @@ helloMsg{
 	overflow: hidden;
 }
 
-.mainUI{
+.mainUI {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -204,27 +190,22 @@ helloMsg{
 	animation: 2s mainUI;
 }
 
-.backBtn{
+.backBtn {
 	height: 50px;
 	width: 100px;
 	background: var(--btnColor);
-
 }
 
-
-
-.topUI{
+.topUI {
 	padding: 0;
 	margin: 0;
 	height: 15%;
 	max-width: 100%;
 	background: rgb(255, 0, 0);
 	margin-top: 0;
-
-	
 }
 
-.menuIcon{
+.menuIcon {
 	height: 30px;
 	width: 30px;
 	margin: 1%;
@@ -232,8 +213,7 @@ helloMsg{
 	background: #fff;
 }
 
-
-.menuUI{
+.menuUI {
 	position: absolute;
 	display: flex;
 	flex-direction: column;
@@ -245,66 +225,62 @@ helloMsg{
 	animation: 0.5s menuApp forwards;
 }
 
-.menuList{
+.menuList {
 	font-size: 10px;
 	height: 20px;
 	justify-content: center;
 	border-bottom: 0.2px solid #fff;
 	display: flex;
 	flex-direction: column;
-	padding:20px;
+	padding: 20px;
 	color: #fdfdfd;
 }
 
-.menuList h1{
+.menuList h1 {
 	font-weight: bold;
 	font-size: 20px;
 	margin-bottom: 1px;
 }
 
-.menuList p{
+.menuList p {
 	font-weight: normal;
 	font-size: 15px;
 	margin-top: 0;
 }
 
-.menuList:hover{
+.menuList:hover {
 	background: #000;
 }
 
-.section{
+.section {
 	border: 1px solid #fff;
 }
 
-.briefInfoBox{
-
+.briefInfoBox {
 }
 
-
-.charInfo{
+.charInfo {
 	display: flex;
 	height: 50px;
-	background:#c3c3c3;
+	background: #c3c3c3;
 }
 
-.charInfoBox{
+.charInfoBox {
 	height: 100%;
 	width: 50%;
 	border: 1px solid #000;
 }
 
-
-.midUI{
+.midUI {
 	padding: 0;
 	margin: 0;
 	height: 100%;
 	width: 100%;
 	background: rgb(255, 255, 255);
 	overflow: scroll;
-
 }
 
-.events{
+.events {
 	display: flex;
 	flex-direction: column;
 	height: 200px;
@@ -312,22 +288,22 @@ helloMsg{
 	margin: 5px 7px;
 }
 
-.eventName,.eventInfo{
+.eventName,
+.eventInfo {
 	margin: 0;
 
 	font-size: 1em;
 	color: rgb(124, 124, 124);
 }
 
-.eventInfo{
+.eventInfo {
 }
 
-
 .midUI::-webkit-scrollbar {
-	display: none; 
-      }
+	display: none;
+}
 
-.bottomUI{
+.bottomUI {
 	display: flex;
 	flex-direction: column;
 	padding: 0;
@@ -335,25 +311,20 @@ helloMsg{
 	height: 35%;
 	width: 100%;
 	background: rgb(153, 202, 210);
-	
-
 }
 
-
-.ageBox{
+.ageBox {
 	display: flex;
-	justify-content:center;
+	justify-content: center;
 	align-items: center;
 	height: 100%;
 	width: 100%;
 	text-align: center;
 	user-select: none;
 	background: #3564a2;
-
 }
 
-
-.ageBtn{
+.ageBtn {
 	position: absolute;
 	height: 11%;
 	width: 20%;
@@ -367,10 +338,9 @@ helloMsg{
 	align-items: center;
 	user-select: none;
 	box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.638);
-
 }
 
-.options{
+.options {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -378,60 +348,61 @@ helloMsg{
 	height: 35%;
 	border-top: 2px solid #000;
 	border-bottom: 2px solid #000;
-
 }
 
-.bottomLeftOne, .bottomLeftTwo, .bottomRightOne, .bottomRightTwo{
+.bottomLeftOne,
+.bottomLeftTwo,
+.bottomRightOne,
+.bottomRightTwo {
 	display: flex;
-	justify-content:center;
+	justify-content: center;
 	align-items: center;
 	height: 100%;
 	width: 100%;
 	background: #3564a2;
 }
 
-.bottomLeftOne, .bottomLeftTwo, .bottomRightOne{
+.bottomLeftOne,
+.bottomLeftTwo,
+.bottomRightOne {
 	border-right: 1px solid #000;
 }
 
-.bottomRightOne{
+.bottomRightOne {
 	border-left: 1px solid #000;
 }
 
-
-.bottomLeft , .bottomRight {
+.bottomLeft,
+.bottomRight {
 	display: flex;
-	justify-content:center;
+	justify-content: center;
 	align-items: center;
 	justify-items: space-evenly;
 	height: 100%;
 	width: 100%;
-
-	
 }
 
-
-
-
-
-
-.lifeStage, .assets, .relationships, .activities{
+.lifeStage,
+.assets,
+.relationships,
+.activities {
 	height: 50%;
 	width: 60%;
 	border-radius: 50%;
 }
 
-.assets, .relationships, .activities{
+.assets,
+.relationships,
+.activities {
 	background: rgb(2, 230, 255);
 	border-radius: 50%;
 }
 
-.lifeStage{
+.lifeStage {
 	background: rgb(237, 114, 6);
 }
 
-
-.statsMain{
+.statsMain {
 	display: flex;
 	flex-direction: column;
 	height: 70%;
@@ -441,7 +412,7 @@ helloMsg{
 	align-items: center;
 }
 
-.stats{
+.stats {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -451,7 +422,7 @@ helloMsg{
 	gap: 2px;
 }
 
-.statBox{
+.statBox {
 	display: flex;
 	justify-content: right;
 	align-items: center;
@@ -460,139 +431,99 @@ helloMsg{
 	width: 100%;
 }
 
-.statText{
+.statText {
 	display: flex;
 	justify-content: left;
 	color: #a7a4a4;
 	font-size: 20px;
-	height:30px;
-	user-select: none
+	height: 30px;
+	user-select: none;
 	/* box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.368); */
 }
 
-.statBar{
-	display:flex;
-	justify-content:right;
+.statBar {
+	display: flex;
+	justify-content: right;
 	align-items: center;
 	height: 50%;
 	width: 60%;
 	background: #20a419;
 }
 
-.happinessDiv{
-
+.happinessDiv {
 }
 
-.healthDiv{
-
+.healthDiv {
 }
 
-.smartsDiv{
-
+.smartsDiv {
 }
 
-.looksDiv{
-
+.looksDiv {
 }
 
-.happiness{
-
+.happiness {
 }
 
-.health{
-
+.health {
 }
 
-.smarts{
-
+.smarts {
 }
 
-.looks{
-
+.looks {
 }
 
-.statBar{
-
+.statBar {
 }
 
-.barPercentage{
-	display:flex;
-	justify-content:right;
+.barPercentage {
+	display: flex;
+	justify-content: right;
 	color: #fff;
 	font-size: 10px;
 	margin-right: 5px;
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@keyframes mainUI{
-	0%{
+@keyframes mainUI {
+	0% {
 		opacity: 0;
 	}
-	100%{
+	100% {
 		opacity: 1;
 	}
 }
 
-
-@keyframes menuApp{
-	0%{
-		transform: translateY(500px)
-		
+@keyframes menuApp {
+	0% {
+		transform: translateY(500px);
 	}
-	100%{
-
-		transform: translateY(0px)
-
-
+	100% {
+		transform: translateY(0px);
 	}
-
 }
 
-@keyframes menuDis{
-	0%{
-		transform: translateY(0px)
-		
+@keyframes menuDis {
+	0% {
+		transform: translateY(0px);
 	}
-	100%{
-
-		transform: translateY(100%)
-
-
+	100% {
+		transform: translateY(100%);
 	}
-
 }
 
-
-.alertBox{
+.alertBox {
 	animation: 1s alertBoxDis;
 }
 
-@keyframes alertBoxDis{
-	0%{
+@keyframes alertBoxDis {
+	0% {
 		opacity: 0;
 	}
-	50%{
+	50% {
 		opacity: 1;
 	}
-	100%{
+	100% {
 		opacity: 0;
 	}
 }
-
-
-
