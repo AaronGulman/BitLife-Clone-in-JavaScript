@@ -1,4 +1,4 @@
-# BitLife rewritten in ... JavaScript !
+# BitLife rewritten in ... pure vanilla JavaScript !
 ![image](https://github.com/AaronGulman/JS-game-text-/assets/81993286/cdebfd4e-0723-4e57-99fe-74ff7b79dffc)
 
 
