@@ -31,4 +31,4 @@ I am recreating the popular mobile game "BitLife" using JavaScript. Although I c
 - Add additional functionalities to improve gameplay experience.
 ---
 
-## THIS PROJECT'S TIMELINE IS TBD
+## THIS PROJECT'S DEADLINE IS TBD
