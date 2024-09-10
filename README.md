@@ -30,3 +30,5 @@ I am recreating the popular mobile game "BitLife" using JavaScript. Although I c
 - Optimize the application for performance and usability.
 - Add additional functionalities to improve gameplay experience.
 ---
+
+## THIS PROJECT'S TIMELINE IS TBD
