@@ -27,10 +27,11 @@ I am recreating the popular mobile game "BitLife" using JavaScript. Although I c
 
 ## Future Plans
 - Continue developing features to closely mimic the original BitLife game.
-
-# The original game: https://bitlifeonline.io/home
 - Optimize the application for performance and usability.
 - Add additional functionalities to improve gameplay experience.
 ---
 
 ## THIS PROJECT'S DEADLINE IS TBD
+
+# The original game: https://bitlifeonline.io/home
+
